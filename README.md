@@ -42,8 +42,11 @@ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 sudo reboot
 ```
 > install k3s
-`sudo su -`
-`curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s - --disable traefik`
+
+```
+ sudo su -
+ curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s - --disable traefik
+```
 
 > Check for successful installation of k3s
 
